@@ -88,7 +88,7 @@
         }
         
         .projectsContnet>div {
-            padding: 6px 0;
+            padding: 4px 0;
         }
         
         .functionModule>li {
@@ -105,9 +105,9 @@
         
         .bottom {
             position: relative;
-            height: 160px;
+            height: 140px;
             text-align: center;
-            line-height: 160px;
+            line-height: 140px;
             background: #000;
             color: rgba(255, 255, 255, 0.9);
             letter-spacing: 2px;
@@ -117,16 +117,13 @@
         .bottom :before {
             position: absolute;
             left: 0;
-            content: "@weijq";
+            content: " +86 15956997970 | 15956997970@163.com ";
             width: 100%;
             height: 100px;
             color: rgba(0, 0, 0, 0.9);
             background: #fff;
             border: 0 solid #fff;
             border-radius: 0 0 50% 50%;
-            /* background: radial-gradient(circle at top right, transparent 20px, #4a8de6 0) 100% 0; */
-            /* background-size: 100% 100%;
-            background-repeat: no-repeat; */
         }
         
         @media print {
@@ -177,33 +174,35 @@
                 font-style: italic;
             }
             li {
-                padding: 5px 0;
+                padding: 6px 0;
                 list-style: none;
             }
             .bottom {
-                display: none;
+                /* display: none; */
                 position: relative;
-                height: 160px;
+                height: 80px;
                 text-align: center;
-                line-height: 160px;
+                line-height: 80px;
                 background: #000;
-                color: rgba(255, 255, 255, 0.9);
+                color: #1890ff;
                 border: 1px solid #fff;
                 letter-spacing: 2px;
+                border-left: 0;
             }
             .bottom :before {
                 position: absolute;
                 left: 0;
-                content: "@weijq";
+                content: " +86 15956997970 | 15956997970@163.com ";
                 width: 100%;
                 height: 100px;
-                color: rgba(0, 0, 0, 0.9);
+                color: rgba(0, 0, 0, 0.8);
                 background: #fff;
-                border-radius: 0 0 50% 50%;
+                border-radius: 0 0 0 0;
                 border: 1px solid #fff;
-                background: radial-gradient(circle at top right, transparent 20px, #4a8de6 0) 100% 0;
+                border-left: 0;
+                /* background: radial-gradient(circle at top right, transparent 20px, #4a8de6 0) 100% 0;
                 background-size: 100% 100%;
-                background-repeat: no-repeat;
+                background-repeat: no-repeat; */
             }
         }
     </style>
@@ -217,7 +216,7 @@
                 <p class="pTitle">基本信息</p>
                 <ul>
                     <li class="name">韦继强</li>
-                    <li>高级前端工程师</li>
+                    <li>前端开发工程师</li>
                     <li>安徽 合肥</li>
                     <li>+86 15956997970 &nbsp;|&nbsp; 15956997970@163.com</li>
                 </ul>
@@ -225,7 +224,7 @@
             <div class="sqInfo">
                 <p class="pTitle">教育背景</p>
                 <ul>
-                    <li><span class="name">合肥师范学院</span><span class="educationTime">2011年9月 - 2015年7月</span></li>
+                    <li><span>合肥师范学院</span><span class="educationTime">2011年9月 - 2015年7月</span></li>
                     <li>本 科</li>
                     <li>计算机软件专业</li>
                     <li>英语四级、在校曾获得奖学金</li>
@@ -245,7 +244,7 @@
                 <p class="pTitle">工作经历</p>
                 <ul>
                     <li><span class="">合肥安慧软件公司</span><span class="workTime">2016年4月 - 至今</span></li>
-                    <li><span class="">赛猊腾龙信息技术有限公司</span><span class="workTime">2015年7月 - 2016年3月</span></li>
+                    <li><span class="">赛猊腾龙信息技术有限公司</span><span class="workTime">2015年5月 - 2016年3月</span></li>
                 </ul>
             </div>
             <div class="proInfo">
@@ -254,7 +253,7 @@
                     <div class="projectsContnet">
                         <div class="projectName">瑞丽市案件核查平台</div>
                         <div class="useTec">
-                            运用技术：vue，vue-router，vuex，antd-vue，scss，webpack，antv，d3js，websoket，java，postgresql</div>
+                            运用技术：vue，vue-router，vuex，antd-vue，scss，webpack，axios, antv，d3js，websocket，java，postgresql</div>
                         <div class="functionDes">
                             <span>系统描述：</span>
                             <span>此平台主要是解决交通事故案件、刑事案件处理过程中不能及时预警、通知、统计、归档等问题。重点打造案件处理流程的监管、预警提示、完结考核、分析统计、台账打印等实战业务，提高案件处理效率和案件处理覆盖率。</span>
@@ -275,13 +274,13 @@
                         </div>
                         <div class="mianTask">主要工作：1.需求调研；2.技术选型；3.前端各模块设计开发；4.系统部署及系统演示；</div>
                         <div class="summary">
-                            遇到主要问题及解决方案：1.跟客户沟通需求，客户只描述了现有问题及业务处理流程，说不上具体要做成什么样。根据客户描述，写成需求文档跟客户确认，跟公司领导审核；2.技术选型在选用UI架子是有elemnetUI和antd-vue，根据之前使用过antd react版本的经验，对比了两者api，相似度极高，能加快开发效率，决定采用antd-vue； 3.scss集成，统一样式布局；4.浏览器兼容，平台部署在公安网，windowsxp系统，对chrome浏览器的版本支持最高到49.x，D3js库不兼容,flex布局支持也不友好。降低D3js依赖库版本，替换flex布局；
+                            遇到主要问题及解决方案：1.跟客户沟通需求，客户只描述了现有问题及业务处理流程，说不上具体要做成什么样。根据客户描述，写成需求文档跟客户确认，跟公司领导审核；2.技术选型在选用UI架子是有elemnetUI和antd-vue，根据之前使用过antd react版本的经验，对比了两者api，相似度极高，能加快开发效率，决定采用antd-vue； 3.scss集成，统一样式布局；4.浏览器兼容，平台部署在公安网，windowsxp系统，对chrome浏览器的版本支持最高到49.x，D3js库不兼容。降低D3js依赖库版本,更改参数设置；
                         </div>
                     </div>
                     <div class="projectsContnet">
                         <div class="projectName">瑞丽交警涉案财物管理平台</div>
                         <div class="useTec">
-                            运用技术：react，redux，antd，webpack，echarts, websoket, nodejs，loopback，mongodb</div>
+                            运用技术：react，redux，antd，webpack，echarts, websocket, axios, nodejs，loopback，mongodb</div>
                         <div class="functionDes">
                             功能描述：系统建设前，各地区交警对涉案车辆进行保管、处置、监督基本处于纸质化阶段，特别对于无牌车识别、车辆报废提醒、涉案车辆停车场数量及一车一档、管理台账建立等工作执行相当困难；此平台是为了解决涉案车辆纸质化管理的诸多问题，迈向电子化网上管理。
                         </div>
@@ -311,20 +310,21 @@
                     <div class="projectsContnet">
                         <div class="projectName">雕虫 (个人项目)</div>
                         <div class="useTec">
-                            运用技术：react，redux，antd，webpack，nextjs,java，spring，mybatis，mysql</div>
+                            运用技术：react，redux，antd，webpack，axios, nextjs, java，spring，mybatis，mysql</div>
                         <div class="functionDes">功能描述：互联网写作平台[类"简书"写作平台]</div>
                         <div class="functionPart">
                             <span>主要功能模块：</span>
                             <ul class="functionModule">
                                 <li>1.平台登录、注册功能</li>
-                                <li>1.首页</li>
-                                <li>2.文章列表</li>
+                                <li>2.首页</li>
                                 <li>3.全文搜索</li>
-                                <li>4.文章分类</li>
-                                <li>5.作者推荐</li>
-                                <li>6.写文章</li>
-                                <li>7.评论、点赞</li>
-                                <li>8.用户管理</li>
+                                <li>4.文章列表</li>
+                                <li>5.文章详情</li>
+                                <li>6.评论、点赞</li>
+                                <li>7.编辑文章</li>
+                                <li>8.文章分类</li>
+                                <li>9.作者推荐</li>
+                                <li>10.用户管理</li>
                             </ul>
                         </div>
                         <div class="mianTask">主要工作：1.平台功能模块评估；2.前端页面各个功能模块的设计、开发；3.远程接口服务的对接；4.功能自测</div>
@@ -333,7 +333,7 @@
                     <div class="projectsContnet">
                         <div class="projectName">恶劣天气预警防控系统</div>
                         <div class="useTec">
-                            运用技术：react，redux，antd，webpack， websoket, nodejs，express，mongodb</div>
+                            运用技术：react，redux，antd，webpack， websocket, axios, nodejs，express，mongodb</div>
                         <div class="functionDes">
                             <span>系统描述：</span>
                             <span>此系统主要是用于高速公路在恶劣天气时系统接收到预警时提供应对预案，经确认后下发预案改变高速公路上的一些设备参数及提示信息，从而有的效预防或减少因恶劣天气导致的一系列高速交通事故。</span>
@@ -355,14 +355,14 @@
                                 <li>9.系统管理及日志管理</li>
                             </ul>
                         </div>
-                        <div class="mianTask">主要工作：1.参与前端系统架构；2.气象预警监控；3.预案发布；4.防控系统、控制单元、预案配置；5.部分设备单独控制</div>
+                        <div class="mianTask">主要工作：1.参与前端技术预研和架构搭建；2.气象预警监控；3.预案发布；4.防控系统、控制单元、预案配置；5.部分设备单独控制</div>
                         <div class="summary">
-                            遇到主要问题及解决方案：1.第一次采用用react技术开发，不知如何组织代码结构及最佳实践，查阅资料、研究网上demo； 2.系统部署在交警部门专网,系统在线的图标打包后找不到文件，下载antd的离线图表库更改了antd样式源码解决； 3.违停喊话模块（设备单独控制），要在页面提供实时喊话功能，采用了一个语音处理的库，为了满足前端设备要求更改了语音流的编码压缩参数解决；
+                            遇到主要问题及解决方案：1.第一次采用react技术开发，不知如何组织代码结构及最佳实践，查阅文档资料、研究网上demo，尝试做到更完善； 2.系统部署在交警部门专网,系统在线的图标打包后找不到文件，下载antd的离线图表库更改了antd样式源码解决； 3.违停喊话模块（设备单独控制），要在页面提供实时喊话功能，采用了一个语音处理的库，为了满足前端设备要求更改了语音流的编码压缩参数解决；
                         </div>
                     </div>
                 </div>
                 <div class="description">
-                    <!-- <p>&nbsp;&nbsp;&nbsp; 4年的前端项目开发经历，让我我积累了很丰富的项目经验，欢迎来撩。(*￣︶￣)</p> -->
+                    <!-- <p>&nbsp;&nbsp;&nbsp; 4年多的前端开发经历，让我积累了很丰富的项目经验，欢迎来撩。</p> -->
                 </div>
 
             </div>
