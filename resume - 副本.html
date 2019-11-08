@@ -9,6 +9,7 @@
     <style type="text/css">
         body {
             margin: 0;
+            /* font-size: 62%; */
         }
         
         .mainArea {
@@ -19,21 +20,43 @@
         .title {
             position: relative;
             text-align: center;
-            font-size: 24px;
+            /* font-size: 24px;
             height: 160px;
             line-height: 160px;
             font-weight: 700;
-            letter-spacing: 2px;
-            /* padding: 20px; */
+            letter-spacing: 2px; */
+            font-size: 1.5rem;
+            height: 10rem;
+            line-height: 10rem;
+            font-weight: 700;
+            letter-spacing: .125rem;
             color: #fdfdfd;
             background: #1890ff;
             border-radius: 0 0 50% 50%;
         }
         
+        .onlineAdress {
+            position: absolute;
+            top: 2rem;
+            /* left: 51rem; */
+            height: 2rem;
+            font-size: 0.875rem;
+            font-weight: 100;
+            color: #f0f0f0;
+            text-decoration: none;
+            transform: translateX(-8.125rem);
+        }
+        
+        .alink {
+            font-size: 0.875rem;
+            font-weight: 100;
+            color: #fff;
+            text-decoration: none;
+        }
+        
         .contnet {
-            /* position: absolute; */
-            /* top: 90px; */
-            padding: 20px 0;
+            /* padding: 20px 0; */
+            padding: 1.25rem 0;
             margin: 0 20%;
             background: #fdfdfd;
             border-top-left-radius: 50px;
@@ -42,18 +65,26 @@
         
         .hireMe {
             position: absolute;
-            font-size: 14px;
+            /* font-size: 14px;
             top: 26px;
-            padding-left: 10px;
+            padding-left: 10px; */
+            font-size: .875rem;
+            top: 1.625rem;
+            padding-left: .625rem;
             font-weight: 100;
         }
         
         .pTitle {
-            padding: 10px 0px;
+            /* padding: 10px 0px;
             border-bottom: 1px solid #ebedf0;
             font-size: 18px;
             font-weight: 700;
-            letter-spacing: 1px;
+            letter-spacing: 1px; */
+            padding: .625rem 0;
+            border-bottom: .0625rem solid #ebedf0;
+            font-size: 1.125rem;
+            font-weight: 700;
+            letter-spacing: .0625rem;
             font-style: italic;
         }
         
@@ -67,40 +98,53 @@
         }
         
         .textIndent {
-            text-indent: 78px;
-            margin-top: 8px;
+            /* text-indent: 78px;
+            margin-top: 8px; */
+            text-indent: 4.875rem;
+            margin-top: 0.5rem;
         }
         
         li {
-            padding: 5px 0;
+            /* padding: 5px 0;
             list-style: none;
-            letter-spacing: 1px;
+            letter-spacing: 1px; */
+            padding: .3125rem 0;
+            list-style: none;
+            letter-spacing: .0625rem;
         }
         
         .projectName {
-            margin: 2px 0;
+            /* margin: 2px 0;
             font-weight: 700;
-            letter-spacing: 1px;
+            letter-spacing: 1px; */
+            margin: .125rem 0;
+            font-weight: 700;
+            letter-spacing: .0625rem;
         }
         
         .projectsContnet {
-            padding: 10px 0 30px 46px;
+            /* padding: 10px 0 30px 46px; */
+            padding: .625rem 0 1.875rem 2.875rem;
         }
         
         .projectsContnet>div {
-            padding: 4px 0;
+            /* padding: 4px 0; */
+            padding: 0.25rem 0;
         }
         
         .functionModule>li {
-            padding: 4px;
+            /* padding: 4px; */
+            padding: 0.25rem;
         }
         
         .functionDes {
-            line-height: 28px;
+            /* line-height: 28px; */
+            line-height: 1.75rem;
         }
         
         .summary {
-            line-height: 28px;
+            /* line-height: 28px; */
+            line-height: 1.75rem;
         }
         
         .description {
@@ -109,12 +153,15 @@
         
         .bottom {
             position: relative;
-            height: 120px;
+            /* height: 120px; */
+            height: 7.5rem;
             text-align: center;
-            line-height: 20px;
+            /* line-height: 20px; */
+            line-height: 1.25rem;
             background: #000;
             color: rgba(255, 255, 255, 0.9);
-            letter-spacing: 2px;
+            /* letter-spacing: 2px; */
+            letter-spacing: .125rem;
             border: none;
         }
         
@@ -123,11 +170,34 @@
             left: 0;
             content: "+86 15956997970 | 15956997970@163.com ";
             width: 100%;
-            height: 60px;
+            /* height: 60px; */
+            height: 3.75rem;
             color: rgba(0, 0, 0, 0.9);
             background: #fff;
             border: none;
             border-radius: 0 0 50% 50%;
+        }
+        
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+            body {
+                font-size: 62%;
+            }
+            .contnet {
+                margin: 0 .25rem;
+                font-size: .875rem;
+            }
+            .title {
+                font-size: 1.25rem;
+            }
+            /* .onlineAdress {
+                left: 2.5rem;
+            } */
+            .pTitle {
+                font-size: 0.95rem;
+            }
+            .projectsContnet {
+                padding: .625rem 1.4375rem 1.875rem 1.4375rem;
+            }
         }
         
         @media print {
@@ -152,6 +222,9 @@
                 color: #fdfdfd;
                 background: #1890ff;
                 border-radius: 0 0 50% 50%;
+            }
+            .onlineAdress {
+                left: 13.5rem;
             }
             .contnet {
                 /* position: absolute; */
@@ -214,7 +287,15 @@
 
 <body>
     <div class="mainArea">
-        <div class="title"><span>个人信息</span><span class="hireMe">hire me</span></div>
+        <div class="title">
+
+            <span>个人信息</span>
+
+            <!-- <span class="hireMe">hire me</span> -->
+            <br/>
+            <a href="http://www.chinaopensource.top" class="onlineAdress">http://www.chinaopensource.top</a></<a>
+            </span>
+        </div>
         <div class="contnet">
             <div class="baseInfo">
                 <p class="pTitle">基本信息</p>
@@ -257,7 +338,8 @@
                     <div class="projectsContnet">
                         <div class="projectName">瑞丽市案件核查平台</div>
                         <div class="useTec">
-                            运用技术：vue，vue-router，vuex，antd-vue，scss，webpack，axios, antv，d3js，websocket，java，postgresql</div>
+                            运用技术：vue，vue-router，vuex，antd-vue，scss，webpack，axios, antv，d3js，websocket，java，postgresql
+                        </div>
                         <div class="functionDes">
                             <span>系统描述：</span>
                             <span>此平台主要是解决交通事故案件、刑事案件处理过程中不能及时预警、通知、统计、归档等问题。重点打造案件处理流程的监管、预警提示、完结考核、分析统计、台账打印等实战业务，提高案件处理效率和案件处理覆盖率。</span>
@@ -308,7 +390,7 @@
                         </div>
                         <div class="mianTask">主要工作：1.负责前端架构优化；2.通用界面，通用表单优化；3.系统权限设计引入；4.系统管理模块开发；5.通用组件的封装</div>
                         <div class="summary">
-                            遇到问题及解决方案：1.前端代码每次打包时都要手动配置信息，引入外部配置文件解决；2.项目部署在交警大队内网，外部无法访问，通过端口映射解决；3.表单优化/系统优化，提高30%项目开发效率
+                            遇到问题及解决方案：1.前端代码每次打包时都要手动配置信息，引入外部配置文件解决；2.项目部署在交警大队内网，外部无法访问，通过端口映射解决；3.表单优化/系统优化，提高20%+项目开发效率
                         </div>
                     </div>
                     <div class="projectsContnet">
@@ -372,7 +454,7 @@
             </div>
         </div>
         <div class="bottom">
-            <span>@weijq  a1be1d86f257@4AA3</span>
+            <span>@weijq a1be1d86f257@4AA3</span>
         </div>
     </div>
 </body>
