@@ -44,7 +44,6 @@
             font-weight: 100;
             color: #f0f0f0;
             text-decoration: none;
-            text-align: center;
             transform: translateX(-8.125rem);
         }
         
@@ -81,22 +80,12 @@
             font-size: 18px;
             font-weight: 700;
             letter-spacing: 1px; */
-            padding: .625rem 0 0;
+            padding: .625rem 0;
             border-bottom: .0625rem solid #ebedf0;
             font-size: 1.125rem;
-            /* font-weight: 700; */
+            font-weight: 700;
             letter-spacing: .0625rem;
-            /* font-style: italic; */
-        }
-        
-        .pTitleDiv {
-            width: 100px;
-            border: 1px solid #1890ff;
-            border-bottom: 0px;
-            text-align: center;
-            padding: 4px 0;
-            background: #1890ff;
-            color: #fff;
+            font-style: italic;
         }
         
         .workTime,
@@ -104,15 +93,8 @@
             float: right;
         }
         
-        .labelName {
-            display: inline-block;
-            width: 86px;
-            text-align: right;
-            padding-right: 10px;
-        }
-        
         .name {
-            /* font-weight: 700; */
+            font-weight: 700;
         }
         
         .textIndent {
@@ -242,10 +224,7 @@
                 border-radius: 0 0 50% 50%;
             }
             .onlineAdress {
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                /* text-align: center; */
+                left: 13.5rem;
             }
             .contnet {
                 /* position: absolute; */
@@ -267,9 +246,9 @@
                 /* padding: 10px 0px; */
                 border-bottom: 1px solid #ebedf0;
                 font-size: 18px;
-                /* font-weight: 700; */
+                font-weight: 700;
                 letter-spacing: 1px;
-                /* font-style: italic; */
+                font-style: italic;
             }
             li {
                 padding: 6px 0;
@@ -313,51 +292,31 @@
             <span>个人信息</span>
 
             <!-- <span class="hireMe">hire me</span> -->
-            <br />
+            <br/>
             <a href="http://www.chinaopensource.top" class="onlineAdress">http://www.chinaopensource.top</a></<a>
-            <!-- <a href="http://www.chinaopensource.top" class="onlineAdress">hire me</a></<a> -->
             </span>
         </div>
         <div class="contnet">
             <div class="baseInfo">
-                <div class="pTitle">
-                    <div class="pTitleDiv">基本信息</div>
-                </div>
+                <p class="pTitle">基本信息</p>
                 <ul>
-                    <li class="name"><label class="labelName" for="">姓名：</label>韦继强</li>
-                    <li><label class="labelName" for="">岗位：</label>前端开发工程师</li>
-                    <li><label class="labelName" for="">工作年限：</label>5年</li>
-                    <li><label class="labelName" for="">所在城市：</label>安徽 合肥</li>
-                    <li><label class="labelName" for="">联系方式：</label>+86 15956997970 &nbsp;|&nbsp; 15956997970@163.com
-                    </li>
-                </ul>
-            </div>
-            <div class="baseInfo">
-                <div class="pTitle">
-                    <div class="pTitleDiv">现状&期望</div>
-                </div>
-                <ul>
-                    <li><label class="labelName" for="">期望岗位：</label>高级前端开发岗/移动端开发岗</li>
-                    <li><label class="labelName" for="">期望薪资：</label>15K</li>
-                    <li><label class="labelName" for="">职位匹配：</label>统招本科计算机专业，熟练使用HTML5，CSS3，JS(ES5/ES6）react/redux vue/vuex antd等开发技能,5年前端开发经验职位匹配度高
-                    </li>
-                    <li class="name"><label class="labelName" for="">工作状态：</label>在职</li>
-                    <li><label class="labelName" for="">到岗时间：</label>2-3周</li>
+                    <li class="name">韦继强</li>
+                    <li>前端开发工程师</li>
+                    <li>安徽 合肥</li>
+                    <li>+86 15956997970 &nbsp;|&nbsp; 15956997970@163.com</li>
                 </ul>
             </div>
             <div class="sqInfo">
-                <div class="pTitle">
-                    <div class="pTitleDiv">教育经历</div>
-                </div>
+                <p class="pTitle">教育背景</p>
                 <ul>
                     <li><span>合肥师范学院</span><span class="educationTime">2011年9月 - 2015年7月</span></li>
-                    <li>本 科 | 统 招 &nbsp;&nbsp;&nbsp;计算机软件工程</li>
+                    <li>本 科</li>
+                    <li>计算机软件专业</li>
+                    <li>英语四级、在校曾获得奖学金</li>
                 </ul>
             </div>
             <div class="sqInfo">
-                <div class="pTitle">
-                    <div class="pTitleDiv">掌握技能</div>
-                </div>
+                <p class="pTitle">掌握技能</p>
                 <ul>
                     <li><span>前端技能: 熟悉 HTML5，CSS3，JS(ES5 / ES6）react/redux vue/vuex antd </span>
                         <div class="textIndent">了解 jquery angular1.x scss bootstrap webpack echarts antv</div>
@@ -367,18 +326,14 @@
                 </ul>
             </div>
             <div class="sqInfo">
-                <div class="pTitle">
-                    <div class="pTitleDiv">工作经历</div>
-                </div>
+                <p class="pTitle">工作经历</p>
                 <ul>
-                    <li><span class="">合肥安慧软件公司（前端开发）</span><span class="workTime">2016年4月 - 至今</span></li>
-                    <li><span class="">赛猊腾龙信息技术有限公司（前端开发）</span><span class="workTime">2015年5月 - 2016年3月</span></li>
+                    <li><span class="">合肥安慧软件公司</span><span class="workTime">2016年4月 - 至今</span></li>
+                    <li><span class="">赛猊腾龙信息技术有限公司</span><span class="workTime">2015年5月 - 2016年3月</span></li>
                 </ul>
             </div>
             <div class="proInfo">
-                <div class="pTitle">
-                    <div class="pTitleDiv">项目经历</div>
-                </div>
+                <p class="pTitle">项目经历</p>
                 <div class="projects">
                     <div class="projectsContnet">
                         <div class="projectName">瑞丽市案件核查平台</div>
@@ -392,19 +347,24 @@
                         <div class="functionPart">
                             <span>主要功能模块：</span>
                             <ul class="functionModule">
-                                <li>1.工作台；2.事故案件管理；3.刑事案件管理；4.系统消息推送、手机短信通知；5.警员业务考核；6.数据统计分析；7.案件流程配置、积分规则及节假日配置；8.刑事案件处理信息台账打印及模板下载；9.系统管理及权限控制
-                                </li>
+                                <li>1.工作台</li>
+                                <li>2.事故案件管理</li>
+                                <li>3.刑事案件管理</li>
+                                <li>4.系统消息推送、手机短信通知</li>
+                                <li>5.警员业务考核</li>
+                                <li>6.数据统计分析</li>
+                                <li>7.案件流程配置、积分规则及节假日配置</li>
+                                <li>8.刑事案件处理信息台账打印及模板下载</li>
+                                <li>9.系统管理及权限控制</li>
                             </ul>
                         </div>
-                        <div class="mianTask">主要工作：1.需求调研；2.技术选型；3.技术预研；4.前端各模块设计开发；5.系统部署及系统演示培训；</div>
-                        <!-- <div class="summary">
-                            遇到主要问题及解决方案：1.跟客户沟通需求，客户只描述了现有问题及业务处理流程，说不上具体要做成什么样。根据客户描述，写成需求文档跟客户确认，跟公司领导审核；2.技术选型在选用UI架子是有elemnetUI和antd-vue，根据之前使用过antd
-                            react版本的经验，对比了两者api，相似度极高，能加快开发效率，决定采用antd-vue；
-                            3.scss集成，统一样式布局；4.浏览器兼容，平台部署在公安网，windowsxp系统，对chrome浏览器的版本支持最高到49.x，D3js库不兼容。降低D3js依赖库版本,更改参数设置；
-                        </div> -->
+                        <div class="mianTask">主要工作：1.需求调研；2.技术选型；3.前端各模块设计开发；4.系统部署及系统演示；</div>
+                        <div class="summary">
+                            遇到主要问题及解决方案：1.跟客户沟通需求，客户只描述了现有问题及业务处理流程，说不上具体要做成什么样。根据客户描述，写成需求文档跟客户确认，跟公司领导审核；2.技术选型在选用UI架子是有elemnetUI和antd-vue，根据之前使用过antd react版本的经验，对比了两者api，相似度极高，能加快开发效率，决定采用antd-vue； 3.scss集成，统一样式布局；4.浏览器兼容，平台部署在公安网，windowsxp系统，对chrome浏览器的版本支持最高到49.x，D3js库不兼容。降低D3js依赖库版本,更改参数设置；
+                        </div>
                     </div>
                     <div class="projectsContnet">
-                        <div class="projectName">交警涉案财物管理平台</div>
+                        <div class="projectName">瑞丽交警涉案财物管理平台</div>
                         <div class="useTec">
                             运用技术：react，redux，antd，webpack，echarts, websocket, axios, nodejs，loopback，mongodb</div>
                         <div class="functionDes">
@@ -416,46 +376,45 @@
                         <div class="functionPart">
                             <span>主要功能模块：</span>
                             <ul class="functionModule">
-                                <li>1.首页（web）；2扣车登记（web端、app端）；3.扣证登记（web、app）；4.可车、扣证查询（web、app）；5.比对、放车；6.车辆甄别，生成台账和一车一档（web）；7.审核处理(web)；8.车辆公告报废提醒、公告报废处理（web，app）；9.保证金管理；10.系统角色权限管理及日志管理；
-                                </li>
-                                <!-- <li>2.</li>
-                                <li>3.扣证登记（web、app）</li>
-                                <li>4.可车、扣证查询（web、app）</li>
-                                <li>5.比对、放车（app）</li>
-                                <li>6.车辆甄别，生成台账和一车一档（web）</li>
-                                <li>7.审核处理(web)</li>
-                                <li>8.车辆公告报废提醒、公告报废处理（web，app）</li>
-                                <li>9.保证金管理</li>
-                                <li>10.系统角色权限管理及日志管理</li> -->
+                                <li>1.首页（web）</li>
+                                <li>1.扣车登记（web端、app端）</li>
+                                <li>2.扣证登记（web、app）</li>
+                                <li>3.可车、扣证查询（web、app）</li>
+                                <li>4.比对、放车（app）</li>
+                                <li>5.车辆甄别，生成台账和一车一档（web）</li>
+                                <li>6.审核处理(web)</li>
+                                <li>7.车辆公告报废提醒、公告报废处理（web，app）</li>
+                                <li>8.保证金管理</li>
+                                <li>9.系统角色权限管理及日志管理</li>
                             </ul>
                         </div>
                         <div class="mianTask">主要工作：1.负责前端架构优化；2.通用界面，通用表单优化；3.系统权限设计引入；4.系统管理模块开发；5.通用组件的封装</div>
-                        <!-- <div class="summary">
+                        <div class="summary">
                             遇到问题及解决方案：1.前端代码每次打包时都要手动配置信息，引入外部配置文件解决；2.项目部署在交警大队内网，外部无法访问，通过端口映射解决；3.表单优化/系统优化，提高20%+项目开发效率
-                        </div> -->
+                        </div>
                     </div>
                     <div class="projectsContnet">
                         <div class="projectName">雕虫 (个人项目)</div>
                         <div class="useTec">
-                            运用技术：react，redux，antd，webpack，axios, java，spring，mybatis，mysql</div>
-                        <div class="functionDes">功能描述：互联网创作平台[类似"简书"写作平台]</div>
+                            运用技术：react，redux，antd，webpack，axios, nextjs, java，spring，mybatis，mysql</div>
+                        <div class="functionDes">功能描述：互联网写作平台[类"简书"写作平台]</div>
                         <div class="functionPart">
                             <span>主要功能模块：</span>
                             <ul class="functionModule">
-                                <li>1.平台登录、注册功能；2.首页；3.全文搜索；4.文章列表；5.文章详情；6.评论、点赞；7.编辑文章；8.文章分类；9.作者推荐；10.用户管理</li>
-                                <!-- <li></li>
-                                <li></li>
+                                <li>1.平台登录、注册功能</li>
+                                <li>2.首页</li>
+                                <li>3.全文搜索</li>
                                 <li>4.文章列表</li>
                                 <li>5.文章详情</li>
                                 <li>6.评论、点赞</li>
                                 <li>7.编辑文章</li>
                                 <li>8.文章分类</li>
                                 <li>9.作者推荐</li>
-                                <li>10.用户管理</li> -->
+                                <li>10.用户管理</li>
                             </ul>
                         </div>
-                        <div class="mianTask">主要工作：1.平台功能模块评估；2.前端页面各个功能模块的设计、开发；3.远程接口服务的对接；4.功能自测及bug修复</div>
-                        <!-- <div class="summary">遇到问题及解决方案：1.seo问题,使用服务端渲染ssr;2.网站推广问题;3.服务对接及开发中的交流问题;</div> -->
+                        <div class="mianTask">主要工作：1.平台功能模块评估；2.前端页面各个功能模块的设计、开发；3.远程接口服务的对接；4.功能自测</div>
+                        <div class="summary">遇到问题及解决方案：1.seo问题,使用服务端渲染ssr;2.网站推广问题;3.服务对接及开发中的交流问题;</div>
                     </div>
                     <div class="projectsContnet">
                         <div class="projectName">恶劣天气预警防控系统</div>
@@ -471,28 +430,25 @@
                         <div class="functionPart">
                             <span>主要功能模块：</span>
                             <ul class="functionModule">
-                                <li>1.气象预警监控；2.预案发布；3.防控系统、控制单元配置；4.防控预案、气象阀值配置；5.设备单独控制；6.设备备案；7.数据查询统计；8.系统白名单、黑名单；9.系统管理及日志管理
-                                </li>
-                                <!-- <li>2.预案发布</li>
+                                <li>1.气象预警监控</li>
+                                <li>2.预案发布</li>
                                 <li>3.防控系统、控制单元配置</li>
                                 <li>4.防控预案、气象阀值配置</li>
                                 <li>5.设备单独控制</li>
                                 <li>6.设备备案</li>
                                 <li>7.数据查询统计</li>
                                 <li>8.系统白名单、黑名单</li>
-                                <li>9.系统管理及日志管理</li> -->
+                                <li>9.系统管理及日志管理</li>
                             </ul>
                         </div>
                         <div class="mianTask">主要工作：1.参与前端技术预研和架构搭建；2.气象预警监控；3.预案发布；4.防控系统、控制单元、预案配置；5.部分设备单独控制</div>
-                        <!-- <div class="summary">
-                            遇到主要问题及解决方案：1.第一次采用react技术开发，不知如何组织代码结构及最佳实践，查阅文档资料、研究网上demo，尝试做到更完善；
-                            2.系统部署在交警部门专网,系统在线的图标打包后找不到文件，下载antd的离线图表库更改了antd样式源码解决；
-                            3.违停喊话模块（设备单独控制），要在页面提供实时喊话功能，采用了一个语音处理的库，为了满足前端设备要求更改了语音流的编码压缩参数解决；
-                        </div> -->
+                        <div class="summary">
+                            遇到主要问题及解决方案：1.第一次采用react技术开发，不知如何组织代码结构及最佳实践，查阅文档资料、研究网上demo，尝试做到更完善； 2.系统部署在交警部门专网,系统在线的图标打包后找不到文件，下载antd的离线图表库更改了antd样式源码解决； 3.违停喊话模块（设备单独控制），要在页面提供实时喊话功能，采用了一个语音处理的库，为了满足前端设备要求更改了语音流的编码压缩参数解决；
+                        </div>
                     </div>
                 </div>
                 <div class="description">
-                    <span>5年前端开发经历，让我积累了很丰富的项目经验，欢迎来call。</span>
+                    <span>4年多的前端开发经历，让我积累了很丰富的项目经验，欢迎来撩。</span>
                 </div>
 
             </div>
